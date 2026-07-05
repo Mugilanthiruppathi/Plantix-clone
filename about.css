@@ -653,6 +653,9 @@ footer{
         align-items: center; 
         padding: 0 20px; 
     }
+    body{
+        margin: 0 auto;
+    }
     .logo { left: 0; top: 0; }
     .anger { 
         left: 0; 
@@ -695,6 +698,12 @@ footer{
         text-align: center; 
         display: block; 
         margin-top: 10px; 
+    }
+    .div32{
+        display: flex;
+    }
+    .box21{
+        width: 300px;
     }
     .box1 { 
         top: 75%; 
@@ -832,12 +841,12 @@ footer{
     }
     .plant1 { left: 0; top: 0; margin-bottom: 30px; }
     .leter1 { 
-        flex-direction: column; 
+        flex-direction: row; 
         left: 0; 
         width: 100%; 
         height: auto; 
-        align-items: center; 
-        gap: 30px; 
+        /* align-items: center;  */
+        /* gap: 30px;  */
         bottom: 0; 
     }
     .div1 { 
@@ -846,7 +855,7 @@ footer{
         height: auto; 
     }
     .topic3 { 
-        flex-direction: column; 
+        flex-direction: row; 
         height: auto; 
         position: relative; 
         bottom: 0; 
@@ -879,8 +888,18 @@ footer{
         justify-content: center; 
         gap: 10px; 
     }
+    .join2{
+        margin-bottom: 30px;
+    }
     .anger, .find { margin: 5px; font-size: 13px; }
-    .box { font-size: 22px; }
+    .box { font-size: 20px;
+             color: black;
+            margin-top: 120px;
+            line-height: 40px; }
+    .text1{
+        color: black;
+        bottom: 20px;
+    }
     .box1 { 
         flex-direction: column; 
         align-items: center; 
@@ -891,6 +910,25 @@ footer{
     .heading { font-size: 24px; }
     .building { font-size: 26px; }
     .para { font-size: 15px; }
+    .text11{
+           position: relative;
+           left: -5px;
+    }
+    .div32{
+        /* height: 700px; */
+        flex-direction: column;
+        height: 500px;
+        margin: auto;
+    overflow: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    }
+    .div31{
+        width: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    
 }
 
 
@@ -1214,5 +1252,103 @@ nav::before {
         top: 0;
         display: block;
         text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) { 
+    nav {
+        height: 65px ;
+        position: fixed ;
+        background-color: white ;
+        z-index: 2000 ;
+    }
+ 
+    nav:hover {
+        height: auto ;  
+        padding-bottom: 25px ;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15) ;
+        height:450px ;
+        width: 100%;
+        background-color: white;
+    }
+ 
+    nav:hover .logo, 
+    nav:hover .find, 
+    nav:hover .app, 
+    nav:hover::before {
+        position: relative ;
+        top: -190px ;
+        z-index: 2100 ;
+    }
+ 
+    nav:hover .anger:not(:has(.app)), 
+    nav:hover .dropdown {
+        display: block ;
+        position: absolute ;
+        left: 0 ;
+        width: 100% ;  
+        background-color: #ffffff ;  
+        padding: 14px 24px ;
+        text-align: left ;
+        box-shadow: none ;  
+        border: none ;
+        z-index: 2050 ;
+    }
+ 
+    nav:hover .anger:nth-child(2) { top: 65px ; border-top: 1px solid #f0f0f0 ; }  
+    nav:hover .anger:nth-child(3) { top: 115px ; } 
+    nav:hover .anger:nth-child(4) { top: 165px ; }   
+    nav:hover .dropdown { 
+        top: 215px ; 
+        height: auto ;
+        background-color: #ffffff ;
+    }
+ 
+    nav:hover .dropdown-menu {
+        display: block ;
+        position: relative ;
+        top: 8px ;
+        left: 15px ;
+        background-color: #fcfcfc ; 
+        border-left: 2px solid #0e7b80 ; 
+        box-shadow: none ;
+        padding: 4px 0 ;
+        width: auto ;
+        min-width: unset ;
+    }
+
+    nav:hover .dropdown-menu a {
+        display: block ;
+        padding: 8px 16px ;
+        font-size: 14px ;
+        color: #555555 ;
+    }
+ 
+    nav:hover .anger:nth-child(6),
+    nav:hover .dropdown + .anger { 
+        top: 325px ; 
+    }
+ 
+    nav:hover .anger, nav:hover .dropdown-toggle {
+        font-family: 'Poppins', sans-serif ;
+        font-size: 16px ;
+        font-weight: 500 ;
+        color: #4E616A ;
     }
 }

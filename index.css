@@ -81,16 +81,22 @@ img{
     font-size: 44px;
 }
  .box1{
-    height: 400px;
+    height: 300px;
     width: 100%;
  }
  .free1{
-    margin-left: 32%;
+    /* margin-left: 32%;
     margin-top: 5%;
-    font-size: 44px;
+    font-size: 44px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
  }
  .free2{
-    margin-left: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .bu1{
     height: 50px;
@@ -721,6 +727,11 @@ a{
     font-family:'Poppins',sans-serif;
     font-family: 10px;
 }
+
+
+
+
+
 @media (max-width: 1400px) {
     .nav1 { width: 100%; }
     .box2 { left: 20px;}
@@ -735,8 +746,16 @@ a{
         left: 50px; 
         margin: 10px; 
     }
-    .find { left: 100px; }
-    .app { left: 80px; }
+    .bu1{
+        margin: 0 auto;
+        margin-left: -160px;
+    }
+    .logo{
+        padding-left: 30px;
+        margin-left: 360px;
+    }
+    .find { left: 300px; }
+    .app { left: 300px; }
     .dropdown { left: 50px; }
     .arrow1 { left: 40px; }
     .box1 { width: 90%; }
@@ -820,7 +839,7 @@ a{
         left: 0; 
         top: 40px; 
     }
-    .pic { left: 0; margin: 15px; }
+    .pic { left: 0; margin: 55px; }
     .main8 { 
         flex-direction: column; 
         height: auto; 
@@ -833,7 +852,7 @@ a{
         align-items: center; 
         bottom: 0; 
     }
-    .head1, .head2 { left: 0; width: 90%; margin: 15px auto; }
+    .head1, .head2 { left: 0; width: 90%; margin: 0 auto; }
     .topic, .topic1 { 
         left: 0; 
         text-align: center; 
@@ -852,20 +871,19 @@ a{
         flex-direction: column; 
         height: auto; 
         align-items: center; 
-        text-align: center; 
+        text-align: center;
     }
     .plant1 { left: 0; margin-bottom: 20px; }
     .leter1 { 
-        flex-direction: column; 
+        flex-direction: row; 
         left: 0; 
         width: 100%; 
         height: auto; 
-        align-items: center; 
-        gap: 30px; 
         bottom: 0; 
+        display: flex;
     }
     .topic3 { 
-        flex-direction: column; 
+        flex-direction:row; 
         height: auto; 
         position: relative; 
         bottom: 0; 
@@ -874,7 +892,7 @@ a{
         margin-top: 40px; 
     }
     .div2, .div3, .div4, .div5, .div6, .div7 { left: 0; margin: 5px; }
-
+    
     .main12 { 
         flex-direction: column; 
         height: auto; 
@@ -891,9 +909,9 @@ a{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575px) {
     .box1 p { font-size: 24px; }
-    .bu1 { width: 100%; }
+    /* .bu1 { width: 100%; } */
     .heading { font-size: 28px; }
     .head { font-size: 26px; }
     .bu2 { width: 100%; }
@@ -912,6 +930,37 @@ a{
         flex-direction: column; 
         gap: 10px; 
     }
+     .div10{
+        width: 150px;
+        margin-top: 290px;
+        margin-left: 170px;
+    }
+    .bu1{
+        position: relative;
+        left: 80px;
+    }
+    .main10{
+        position: relative;
+        top: -90x;
+    }
+    .box11{
+        position: relative;
+        top: 500px;
+    }
+    .box12{
+        position: relative;
+        top: -290px;
+    }
+    .box13{
+        position: relative;
+        top: 90px;
+    }
+    .box4{
+        position: relative;
+        bottom: 480px;
+        width: 200px;
+        left: 90px;
+   }
 }
 
 
@@ -1036,6 +1085,9 @@ nav::before {
         padding: 40px 24px ;
         height: auto ;
     }
+    .bu1{
+        margin: 0 auto;
+    }
     .topic2 {
         display: flex ;
         flex-direction: column ;
@@ -1061,6 +1113,7 @@ nav::before {
         height: auto ;
         gap: 25px ; 
     }
+    
     .div1 {
         left: 0 ;
         width: 100% ;
@@ -1337,6 +1390,9 @@ nav::before {
         height: auto ;  
         padding-bottom: 25px ;
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15) ;
+        height:450px ;
+        width: 100%;
+        background-color: white;
     }
  
     nav:hover .logo, 
@@ -1344,7 +1400,7 @@ nav::before {
     nav:hover .app, 
     nav:hover::before {
         position: relative ;
-        top: 0 ;
+        top: -190px ;
         z-index: 2100 ;
     }
  

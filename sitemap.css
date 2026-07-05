@@ -419,13 +419,10 @@ a{
     }
     .plant1 { left: 0; margin-bottom: 30px; }
     .leter1 {
-        flex-direction: column; 
-        left: 0; 
+        flex-direction: row; 
+        left: -10px; 
         width: 100%; 
-        height: auto; 
-        align-items: center; 
-        gap: 30px; 
-        bottom: 0; 
+        height: auto;   
     }
     .div1 { 
         width: 100%; 
@@ -433,7 +430,7 @@ a{
         height: auto; 
     }
     .topic3 { 
-        flex-direction: column; 
+        flex-direction: row; 
         height: auto; 
         position: relative; 
         bottom: 0; 
@@ -474,6 +471,11 @@ a{
         display: flex; 
         flex-direction: column; 
         gap: 10px; 
+    }
+    .div10{
+        width: 150px;
+        margin-top: 290px;
+        margin-left: 170px;
     }
 }
 
@@ -705,5 +707,92 @@ nav::before {
         width: 140px ;
         height: auto ;
         display: block ;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) { 
+    nav {
+        height: 65px ;
+        position: fixed ;
+        background-color: white ;
+        z-index: 2000 ;
+    }
+ 
+    nav:hover {
+        height: auto ;  
+        padding-bottom: 25px ;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15) ;
+        height:450px ;
+        width: 100%;
+        background-color: white;
+    }
+ 
+    nav:hover .logo, 
+    nav:hover .find, 
+    nav:hover .app, 
+    nav:hover::before {
+        position: relative ;
+        top: -190px ;
+        z-index: 2100 ;
+    }
+ 
+    nav:hover .anger:not(:has(.app)), 
+    nav:hover .dropdown {
+        display: block ;
+        position: absolute ;
+        left: 0 ;
+        width: 100% ;  
+        background-color: #ffffff ;  
+        padding: 14px 24px ;
+        text-align: left ;
+        box-shadow: none ;  
+        border: none ;
+        z-index: 2050 ;
+    }
+ 
+    nav:hover .anger:nth-child(2) { top: 65px ; border-top: 1px solid #f0f0f0 ; }  
+    nav:hover .anger:nth-child(3) { top: 115px ; } 
+    nav:hover .anger:nth-child(4) { top: 165px ; }   
+    nav:hover .dropdown { 
+        top: 215px ; 
+        height: auto ;
+        background-color: #ffffff ;
+    }
+ 
+    nav:hover .dropdown-menu {
+        display: block ;
+        position: relative ;
+        top: 8px ;
+        left: 15px ;
+        background-color: #fcfcfc ; 
+        border-left: 2px solid #0e7b80 ; 
+        box-shadow: none ;
+        padding: 4px 0 ;
+        width: auto ;
+        min-width: unset ;
+    }
+
+    nav:hover .dropdown-menu a {
+        display: block ;
+        padding: 8px 16px ;
+        font-size: 14px ;
+        color: #555555 ;
+    }
+ 
+    nav:hover .anger:nth-child(6),
+    nav:hover .dropdown + .anger { 
+        top: 325px ; 
+    }
+ 
+    nav:hover .anger, nav:hover .dropdown-toggle {
+        font-family: 'Poppins', sans-serif ;
+        font-size: 16px ;
+        font-weight: 500 ;
+        color: #4E616A ;
     }
 }

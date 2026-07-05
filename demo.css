@@ -360,4 +360,12 @@ img{
     .tell { font-size: 20px; }
     .inp, .email1, .posi, .comp, .seg, .seg1, .bu22 { width: 90%; }
     .fname1, .em, .positi, .comp1, .comp2, .comp3 { width: 90%; }
+    .str{
+        margin-right: 250px;
+        margin-top: -17px;
+    }
+    .str1{
+        margin-right: 100px;
+        margin-top: -17px;
+    }
 }
